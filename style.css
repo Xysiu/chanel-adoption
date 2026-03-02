@@ -102,7 +102,12 @@ p + p {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0.35) 45%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
 }
 
 .hero-content {
@@ -145,8 +150,31 @@ p + p {
   letter-spacing: 0.01em;
 }
 
+.hero-tagline::before {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 1px;
+  background: rgba(184, 134, 11, 0.7);
+  margin: 0 auto 1.25rem;
+}
+
 .hero-cta {
   animation-delay: 0.3s;
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.6);
+  animation: hero-enter 1s ease 0.8s both;
 }
 
 
@@ -155,6 +183,17 @@ p + p {
    ═══════════════════════════════════════════════ */
 .section-heading {
   margin-bottom: 2.5rem;
+}
+
+.section-label {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
 }
 
 .section-heading h2 {
@@ -206,8 +245,9 @@ p + p {
   height: 360px;
   object-fit: cover;
   display: block;
-  /* Slight editorial frame */
-  border-left: 3px solid var(--accent);
+  outline: 1px solid var(--accent);
+  outline-offset: -6px;
+  filter: contrast(1.06) saturate(0.88);
 }
 
 
@@ -253,6 +293,13 @@ p + p {
   align-items: flex-start;
   gap: 1rem;
   padding-left: 0;
+  border-left: 2px solid transparent;
+  transition: padding-left 0.2s ease, border-left-color 0.2s ease;
+}
+
+.requirements-list li:hover {
+  padding-left: 0.5rem;
+  border-left-color: var(--accent);
 }
 
 .bullet {
@@ -283,19 +330,37 @@ p + p {
 }
 
 /* ═══════════════════════════════════════════════
-   STATEMENT (bold closing in "Co dostajesz")
+   STATEMENT — pull quote
    ═══════════════════════════════════════════════ */
 .statement {
   font-family: var(--font-heading);
-  font-size: 1.25rem;
-  font-weight: 400;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--text);
-  line-height: 1.5;
-  padding-top: 0.5em;
-  border-top: 1px solid var(--divider);
-  margin-top: 1.5em !important;
+  line-height: 1.25;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 2rem !important;
+}
+
+.statement::before,
+.statement::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: var(--accent);
+  margin: 0 auto;
+}
+
+.statement::before {
+  margin-bottom: 1.5rem;
+}
+
+.statement::after {
+  margin-top: 1.5rem;
 }
 
 
@@ -336,11 +401,26 @@ p + p {
 
 
 /* ═══════════════════════════════════════════════
-   CONTACT SECTION
+   CONTACT SECTION — dark finish
    ═══════════════════════════════════════════════ */
-.section--contact {
-  background-color: var(--bg);
-  border-top: 1px solid var(--divider);
+.section--dark {
+  background-color: var(--text); /* #111111 */
+}
+
+.section--dark .section-label {
+  color: rgba(184, 134, 11, 0.8);
+}
+
+.section--dark .section-heading h2 {
+  color: #FFFFFF;
+}
+
+.section--dark .accent-line {
+  background-color: var(--accent);
+}
+
+.section--dark .intro-text {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .contact-actions {
@@ -353,18 +433,18 @@ p + p {
 
 .contact-phone {
   font-size: 1.125rem;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .contact-phone strong {
-  color: var(--text);
+  color: rgba(255, 255, 255, 0.9);
   font-weight: 500;
 }
 
 .footer-note {
   font-size: 0.9rem;
-  color: var(--text-muted);
-  border-top: 1px solid var(--divider);
+  color: rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 1.5rem;
 }
 
@@ -433,7 +513,7 @@ p + p {
   }
 
   .photo-block img {
-    height: 400px;
+    height: 420px;
   }
 
   .contact-actions {
