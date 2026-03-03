@@ -7,7 +7,7 @@
   <title>Chanel — Szukam właściwego człowieka</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,69 +15,78 @@
   <!-- ─────────────────────────────────────────────
        1. HERO
   ───────────────────────────────────────────── -->
-  <section class="hero">
-    <!-- REPLACE: hero photo of real Chanel -->
-    <img
-      src="images/hero.jpg"
-      alt="Chanel — owczarek niemiecki mix"
-      class="hero-bg"
-      loading="eager"
-    >
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1 class="hero-title">CHANEL</h1>
-      <p class="hero-tagline">
-        Szukam właściwego człowieka.<br>
-        Nie byle jakiego.
-      </p>
-      <a href="#wymagania" class="btn-primary hero-cta">
-        Sprawdź, czy się kwalifikujesz ↓
-      </a>
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="hero-eyebrow">Owczarek Niemiecki Mix &nbsp;·&nbsp; Wrocław</span>
+        <h1 class="hero-title">CHANEL</h1>
+        <p class="hero-tagline">
+          Szukam właściwego człowieka.<br>
+          <em>Nie byle jakiego.</em>
+        </p>
+        <a href="#wymagania" class="btn-primary hero-cta">
+          Sprawdź, czy się kwalifikujesz
+        </a>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-blob-accent"></div>
+        <div class="hero-img-wrap">
+          <img
+            src="images/hero.jpg"
+            alt="Chanel — owczarek niemiecki mix"
+            loading="eager"
+          >
+        </div>
+        <div class="hero-badge">
+          <span>Czeka na dom</span>
+        </div>
+        <!-- Floating trait tags -->
+        <div class="hero-float-tag hero-float-tag--1" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          Pełna energii
+        </div>
+        <div class="hero-float-tag hero-float-tag--2" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          Lojalna do końca
+        </div>
+        <!-- Decorative dots -->
+        <div class="hero-deco-dots" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
     </div>
-    <div class="hero-scroll" aria-hidden="true">↓</div>
   </section>
 
 
   <!-- ─────────────────────────────────────────────
        2. KIM JESTEM
   ───────────────────────────────────────────── -->
-  <section class="section" id="kim-jestem">
+  <section class="section section--white section--diagonal-top" id="kim-jestem">
     <div class="container">
-      <div class="section-heading">
-        <span class="section-label">01 — KIM JESTEM</span>
-        <h2>Kim jestem</h2>
-        <div class="accent-line"></div>
-      </div>
-
-      <div class="section-body">
-        <div class="text-block">
-          <p>Mam na imię Chanel.</p>
-
-          <p>Jestem mieszanką owczarka niemieckiego —<br>
-          małą jak na swoją rasę, ale z charakterem<br>
-          znacznie większym.</p>
-
-          <p>Przeżyłam wypadek samochodowy.<br>
-          Wróciłam do zdrowia.<br>
-          I wiem teraz, czego chcę od życia.</p>
-
-          <p>Na początku jestem ostrożna. Obserwuję. Oceniam.<br>
-          Ale kiedy zdecyduję, że ktoś jest wart mojego zaufania —<br>
-          jestem jego. Bez reszty.</p>
-
-          <p>Kocham spacery (długie, nie symboliczne).<br>
-          Kocham zabawki. Lubię kiedy jest coś do roboty.<br>
-          I potrafię sprawić, że zaśmiejesz się z mojego wyglądu —<br>
-          to mieszanka, która wyszła... oryginalnie.</p>
+      <div class="section-split">
+        <div class="section-split-text">
+          <div class="section-header">
+            <span class="section-num">01</span>
+            <span class="section-label">Kim jestem</span>
+          </div>
+          <h2 class="section-title">Poznajmy się.</h2>
+          <div class="text-block">
+            <p>Mam na imię Chanel.</p>
+            <p>Jestem mieszanką owczarka niemieckiego — małą jak na swoją rasę, ale z charakterem znacznie większym.</p>
+            <p>Przeżyłam wypadek samochodowy. Wróciłam do zdrowia. I wiem teraz, czego chcę od życia.</p>
+            <p>Na początku jestem ostrożna. Obserwuję. Oceniam. Ale kiedy zdecyduję, że ktoś jest wart mojego zaufania — jestem jego. Bez reszty.</p>
+            <p>Kocham spacery (długie, nie symboliczne). Kocham zabawki. Lubię kiedy jest coś do roboty. I potrafię sprawić, że zaśmiejesz się z mojego wyglądu — to mieszanka, która wyszła... oryginalnie.</p>
+          </div>
         </div>
-
-        <!-- REPLACE: real Chanel personality photo -->
-        <div class="photo-block">
-          <img
-            src="images/personality.jpg"
-            alt="Chanel — zabawa i energia"
-            loading="lazy"
-          >
+        <div class="section-split-visual">
+          <div class="blob-frame blob-frame--1">
+            <img
+              src="images/personality.jpg"
+              alt="Chanel — zabawa i energia"
+              loading="lazy"
+            >
+          </div>
+          <p class="photo-tag">Energia ✦ Charakter</p>
         </div>
       </div>
     </div>
@@ -85,17 +94,18 @@
 
 
   <!-- ─────────────────────────────────────────────
-       3. OCEŃ MNIE SAM/A (VIDEO)
+       3. OCEŃ MNIE (VIDEO)
   ───────────────────────────────────────────── -->
-  <section class="section section--alt" id="ocen-mnie">
+  <section class="section section--terra" id="ocen-mnie">
     <div class="container">
-      <div class="section-heading">
-        <span class="section-label">02 — OCEŃ MNIE</span>
-        <h2>Oceń mnie sam/a.</h2>
-        <div class="accent-line"></div>
+      <div class="section-header section-header--light">
+        <span class="section-num section-num--light">02</span>
+        <span class="section-label section-label--light">Oceń mnie</span>
       </div>
-      <p class="section-subheading">Słowa to jedno. Oto ja w akcji.</p>
-
+      <h2 class="section-title section-title--light">
+        Słowa to jedno.<br>
+        <em>Oto ja w akcji.</em>
+      </h2>
       <div class="video-wrapper">
         <iframe
           src="https://www.youtube.com/embed/VIDEO_ID"
@@ -105,7 +115,6 @@
           allowfullscreen>
         </iframe>
       </div>
-      <!-- REPLACE: swap VIDEO_ID with real Chanel YouTube video ID -->
     </div>
   </section>
 
@@ -113,48 +122,40 @@
   <!-- ─────────────────────────────────────────────
        4. MOJE WYMAGANIA
   ───────────────────────────────────────────── -->
-  <section class="section" id="wymagania">
+  <section class="section section--alt" id="wymagania">
     <div class="container">
-      <div class="section-heading">
-        <span class="section-label">03 — WYMAGANIA</span>
-        <h2>Moje wymagania</h2>
-        <div class="accent-line"></div>
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <span class="section-label">Wymagania</span>
       </div>
 
-      <p class="intro-text">
+      <h2 class="section-title">Moje wymagania.</h2>
+
+      <p class="lead-text">
         Nie szukam kogoś, kto mnie „uratuje".<br>
         Szukam kogoś, kto podoła.
       </p>
 
-      <ul class="requirements-list">
+      <ul class="req-list">
         <li>
-          <span class="bullet" aria-hidden="true">◎</span>
-          <span>Znać się na diecie psów z wrażliwym układem pokarmowym — i traktować ją poważnie</span>
+          <span class="req-num">01</span>
+          <span>Znasz się na diecie psów z wrażliwym układem pokarmowym — i traktować ją poważnie</span>
         </li>
         <li>
-          <span class="bullet" aria-hidden="true">◎</span>
-          <span>Być gotowy/a na regularne wizyty weterynaryjne</span>
+          <span class="req-num">02</span>
+          <span>Jesteś gotowy/a na regularne wizyty weterynaryjne</span>
         </li>
         <li>
-          <span class="bullet" aria-hidden="true">◎</span>
-          <span>
-            Mieć cierpliwość — zaufanie buduję stopniowo,<br>
-            nie na komendę
-          </span>
+          <span class="req-num">03</span>
+          <span>Masz cierpliwość — zaufanie buduję stopniowo, nie na komendę</span>
         </li>
         <li>
-          <span class="bullet" aria-hidden="true">◎</span>
-          <span>
-            Mieszkać w Polsce<br>
-            <span class="note">(Wrocław i okolice to plus — inne miasta do omówienia)</span>
-          </span>
+          <span class="req-num">04</span>
+          <span>Mieszkasz w Polsce <span class="note">— Wrocław i okolice to plus, inne miasta do omówienia</span></span>
         </li>
         <li>
-          <span class="bullet" aria-hidden="true">◎</span>
-          <span>
-            Nie szukać łatwego psa.<br>
-            Szukać właściwego psa.
-          </span>
+          <span class="req-num">05</span>
+          <span>Nie szukasz łatwego psa.<br>Szukasz właściwego psa.</span>
         </li>
       </ul>
 
@@ -169,38 +170,57 @@
   <!-- ─────────────────────────────────────────────
        5. CO DOSTAJESZ W ZAMIAN
   ───────────────────────────────────────────── -->
-  <section class="section" id="co-dostajesz">
+  <section class="section section--white" id="co-dostajesz">
     <div class="container">
-      <div class="section-heading">
-        <span class="section-label">04 — W ZAMIAN</span>
-        <h2>Co dostajesz w zamian</h2>
-        <div class="accent-line"></div>
-      </div>
-
-      <div class="section-body section-body--reverse">
-        <!-- REPLACE: real Chanel action photo -->
-        <div class="photo-block">
-          <img
-            src="images/action.jpg"
-            alt="Chanel na spacerze"
-            loading="lazy"
-          >
+      <div class="section-split section-split--reverse">
+        <div class="section-split-visual">
+          <div class="blob-frame blob-frame--2">
+            <img
+              src="images/action.jpg"
+              alt="Chanel — urocze spojrzenie"
+              loading="lazy"
+            >
+          </div>
         </div>
-
-        <div class="text-block">
-          <p>
-            Partnera na spacery, który nigdy nie odmawia.<br>
-            Kogoś, kto zawsze jest szczęśliwy, że wróciłeś/aś do domu.<br>
-            Psa, który po czasie zaskakuje — swoją energią,<br>
-            lojalnością i charakterem.
-          </p>
-
-          <p class="statement">
-            Nie jestem łatwa.<br>
-            Ale jestem warta zachodu.
-          </p>
+        <div class="section-split-text">
+          <div class="section-header">
+            <span class="section-num">04</span>
+            <span class="section-label">W zamian</span>
+          </div>
+          <h2 class="section-title">Co dostajesz<br>w zamian.</h2>
+          <div class="text-block">
+            <p>
+              Partnera na spacery, który nigdy nie odmawia.<br>
+              Kogoś, kto zawsze jest szczęśliwy, że wróciłeś/aś do domu.<br>
+              Psa, który po czasie zaskakuje — swoją energią, lojalnością i charakterem.
+            </p>
+          </div>
+          <ul class="perks">
+            <li class="perk">
+              <svg class="perk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <span>Lojalny towarzysz</span>
+            </li>
+            <li class="perk">
+              <svg class="perk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <span>Pełen energii i życia</span>
+            </li>
+            <li class="perk">
+              <svg class="perk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              <span>Bezwarunkowa miłość</span>
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
+
+    <div class="statement-band">
+      <div class="peek-dog">
+        <img src="images/action.jpg" alt="" aria-hidden="true">
+      </div>
+      <p class="statement">
+        Nie jestem łatwa.<br>
+        <em>Ale jestem warta zachodu.</em>
+      </p>
     </div>
   </section>
 
@@ -208,32 +228,42 @@
   <!-- ─────────────────────────────────────────────
        6. SCHRONISKO ZA MNĄ STOI
   ───────────────────────────────────────────── -->
-  <section class="section section--alt" id="schronisko">
+  <section class="section section--sage" id="schronisko">
     <div class="container">
-      <div class="section-heading">
-        <span class="section-label">05 — WSPARCIE</span>
-        <h2>Schronisko za mną stoi</h2>
-        <div class="accent-line"></div>
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <span class="section-label">Wsparcie</span>
       </div>
 
-      <p class="intro-text">Adoptując mnie, nie zostajesz z tym sam/a.</p>
+      <h2 class="section-title">Schronisko<br>za mną stoi.</h2>
 
-      <ul class="support-list">
-        <li>
-          <span class="check" aria-hidden="true">✓</span>
-          <span>Bezpłatna opieka weterynaryjna</span>
-        </li>
-        <li>
-          <span class="check" aria-hidden="true">✓</span>
-          <span>Wsparcie w adaptacji w nowym domu</span>
-        </li>
-        <li>
-          <span class="check" aria-hidden="true">✓</span>
-          <span>Kontakt z opiekunką, która zna mnie najlepiej</span>
-        </li>
-      </ul>
+      <p class="lead-text">Adoptując mnie, nie zostajesz z tym sam/a.</p>
 
-      <p class="shelter-closing">Masz pytania — oni mają odpowiedzi.</p>
+      <div class="support-cards">
+        <div class="support-card">
+          <div class="support-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3>Bezpłatna opieka weterynaryjna</h3>
+          <p>Pełne wsparcie medyczne przez cały okres adaptacji</p>
+        </div>
+        <div class="support-card">
+          <div class="support-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Wsparcie w adaptacji</h3>
+          <p>Pomoc w pierwszych tygodniach w nowym domu</p>
+        </div>
+        <div class="support-card">
+          <div class="support-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Kontakt z opiekunką</h3>
+          <p>Zna mnie najlepiej i odpowie na każde pytanie</p>
+        </div>
+      </div>
+
+      <p class="shelter-note">Masz pytania — oni mają odpowiedzi.</p>
     </div>
   </section>
 
@@ -241,18 +271,24 @@
   <!-- ─────────────────────────────────────────────
        7. KONTAKT
   ───────────────────────────────────────────── -->
-  <section class="section section--dark" id="kontakt">
-    <div class="container container--narrow">
-      <div class="section-heading">
-        <span class="section-label">06 — KONTAKT</span>
-        <h2>Gotowy/a na rozmowę kwalifikacyjną?</h2>
-        <div class="accent-line"></div>
+  <section class="section section--ink" id="kontakt">
+    <div class="container container--center">
+      <div class="section-header section-header--center section-header--light">
+        <span class="section-num section-num--light">06</span>
+        <span class="section-label section-label--light">Kontakt</span>
       </div>
 
-      <p class="intro-text">Napisz do nas. Chanel oceni kandydaturę osobiście.</p>
+      <h2 class="section-title section-title--light">
+        Gotowy/a na<br>
+        rozmowę<br>
+        <em>kwalifikacyjną?</em>
+      </h2>
+
+      <p class="lead-text lead-text--light">
+        Napisz do nas. Chanel oceni kandydaturę osobiście.
+      </p>
 
       <div class="contact-actions">
-        <!-- REPLACE: contact email / phone -->
         <a href="mailto:REPLACE_EMAIL" class="btn-primary">Napisz do nas</a>
         <p class="contact-phone">Lub zadzwoń: <strong>REPLACE_PHONE</strong></p>
       </div>
@@ -260,6 +296,38 @@
       <p class="footer-note">Chanel przebywa w schronisku w okolicach Wrocławia.</p>
     </div>
   </section>
+
+  <!-- ─── SECTION SCROLL INDICATOR ─────────────── -->
+  <nav class="scroll-nav" aria-label="Nawigacja po sekcjach">
+    <a href="#hero"        class="scroll-nav-dot" data-section="hero"        title="Chanel"></a>
+    <a href="#kim-jestem"  class="scroll-nav-dot" data-section="kim-jestem"  title="Kim jestem"></a>
+    <a href="#ocen-mnie"   class="scroll-nav-dot" data-section="ocen-mnie"   title="Oceń mnie"></a>
+    <a href="#wymagania"   class="scroll-nav-dot" data-section="wymagania"   title="Wymagania"></a>
+    <a href="#co-dostajesz" class="scroll-nav-dot" data-section="co-dostajesz" title="W zamian"></a>
+    <a href="#schronisko"  class="scroll-nav-dot" data-section="schronisko"  title="Schronisko"></a>
+    <a href="#kontakt"     class="scroll-nav-dot" data-section="kontakt"     title="Kontakt"></a>
+  </nav>
+
+  <script>
+    (function () {
+      const nav  = document.querySelector('.scroll-nav');
+      const dots = document.querySelectorAll('.scroll-nav-dot');
+      const darkSections = new Set(['ocen-mnie', 'kontakt']);
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            dots.forEach(d => d.classList.remove('scroll-nav-dot--active'));
+            const active = document.querySelector(`.scroll-nav-dot[data-section="${entry.target.id}"]`);
+            if (active) active.classList.add('scroll-nav-dot--active');
+            nav.classList.toggle('scroll-nav--light', darkSections.has(entry.target.id));
+          }
+        });
+      }, { threshold: 0.35, rootMargin: '-5% 0px -5% 0px' });
+
+      document.querySelectorAll('section[id]').forEach(s => observer.observe(s));
+    })();
+  </script>
 
 </body>
 </html>
