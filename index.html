@@ -4,258 +4,365 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Chanel — owczarek niemiecki mix szuka właściwego człowieka. Adopcja z okolic Wrocławia.">
-  <title>Chanel — Szukam właściwego człowieka</title>
+  <title>Chanel — Szukam właściwego człowieka ★</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
 </head>
 <body>
 
-  <!-- ─────────────────────────────────────────────
+  <!-- ══════════════════════════════════
        1. HERO
-  ───────────────────────────────────────────── -->
+  ══════════════════════════════════ -->
   <section class="hero" id="hero">
+
+    <!-- Background blobs -->
+    <div class="hero-blob" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob--2" aria-hidden="true"></div>
+
+    <!-- Spinning stamp badge -->
+    <div class="stamp-badge" aria-hidden="true">
+      <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M80 6 L86.5 34 L107 15 L104 44 L132 38 L120 64 L149 72 L129 90 L148 112 L119 108 L120 137 L96 122 L84 150 L80 122 L76 150 L64 122 L40 137 L41 108 L12 112 L31 90 L11 72 L40 64 L28 38 L56 44 L53 15 L73.5 34 Z" fill="#FF3E1D"/>
+        <circle cx="80" cy="80" r="50" fill="#FF3E1D"/>
+        <circle cx="80" cy="80" r="45" fill="none" stroke="#FFF8EE" stroke-width="1.2" stroke-dasharray="3.5 2.5"/>
+        <path id="tc" d="M80,38 a42,42 0 1,1 -0.001,0" fill="none"/>
+        <text font-family="Syne,sans-serif" font-size="9.5" font-weight="700" fill="#FFF8EE" letter-spacing="2.8">
+          <textPath href="#tc" startOffset="9%">★ CZEKA NA DOM ★ WROCŁAW ★</textPath>
+        </text>
+        <text x="80" y="88" font-size="28" text-anchor="middle">🐾</text>
+      </svg>
+    </div>
+
     <div class="hero-inner">
-      <div class="hero-text">
-        <span class="hero-eyebrow">Owczarek Niemiecki Mix &nbsp;·&nbsp; Wrocław</span>
-        <h1 class="hero-title">CHANEL</h1>
+
+      <!-- Eyebrow pills -->
+      <div class="hero-tag-row">
+        <span class="hero-eyebrow">Owczarek Niemiecki Mix</span>
+        <span class="hero-eyebrow">5 lat</span>
+        <span class="hero-eyebrow">♀ Suczka</span>
+      </div>
+
+      <!-- Giant display title -->
+      <h1 class="hero-title">CHANEL</h1>
+
+      <!-- Photo + illustrated overlays -->
+      <div class="hero-visual">
+        <div class="hero-img-frame">
+          <img src="images/hero.jpg" alt="Chanel — owczarek niemiecki mix" loading="eager">
+
+          <!-- SVG stickers overlaid on photo -->
+          <div class="photo-overlay photo-overlay--star" aria-hidden="true">
+            <svg viewBox="0 0 60 60"><path d="M30 4L35.5 20.5H53L39.3 30.8L44.8 47.2L30 37L15.2 47.2L20.7 30.8L7 20.5H24.5Z" fill="#FFDE3B" stroke="#0D0D0D" stroke-width="1.5"/></svg>
+          </div>
+          <div class="photo-overlay photo-overlay--bolt" aria-hidden="true">
+            <svg viewBox="0 0 38 58"><path d="M22 3L7 32H20L14 55L36 24H23Z" fill="#C1FF72" stroke="#0D0D0D" stroke-width="1.5"/></svg>
+          </div>
+          <div class="photo-overlay photo-overlay--heart" aria-hidden="true">
+            <svg viewBox="0 0 50 46"><path d="M25 43S3 28 3 14C3 7.4 8.4 3 14 3C18.6 3 22.4 5.6 25 9.2C27.6 5.6 31.4 3 36 3C41.6 3 47 7.4 47 14C47 28 25 43 25 43Z" fill="#FF3E1D" stroke="#0D0D0D" stroke-width="2"/></svg>
+          </div>
+        </div>
+
+        <!-- Floating sticker tags -->
+        <div class="hero-sticker hero-sticker--energy" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          Pełna energii
+        </div>
+        <div class="hero-sticker hero-sticker--loyal" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          Lojalna do końca
+        </div>
+      </div>
+
+      <!-- Tagline + CTA -->
+      <div class="hero-bottom">
         <p class="hero-tagline">
           Szukam właściwego człowieka.<br>
           <em>Nie byle jakiego.</em>
         </p>
-        <a href="#wymagania" class="btn-primary hero-cta">
+        <a href="#wymagania" class="btn-primary">
           Sprawdź, czy się kwalifikujesz
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
-      <div class="hero-visual">
-        <div class="hero-blob-accent"></div>
-        <div class="hero-img-wrap">
-          <img
-            src="images/hero.jpg"
-            alt="Chanel — owczarek niemiecki mix"
-            loading="eager"
-          >
-        </div>
-        <div class="hero-badge">
-          <span>Czeka na dom</span>
-        </div>
-        <!-- Floating trait tags -->
-        <div class="hero-float-tag hero-float-tag--1" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-          Pełna energii
-        </div>
-        <div class="hero-float-tag hero-float-tag--2" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-          Lojalna do końca
-        </div>
-        <!-- Decorative dots -->
-        <div class="hero-deco-dots" aria-hidden="true">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
+
     </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint" aria-hidden="true">
+      <span>scroll</span>
+      <div class="scroll-hint-line"></div>
+    </div>
+
   </section>
 
 
-  <!-- ─────────────────────────────────────────────
+  <!-- MARQUEE TICKER -->
+  <!-- Mobile scroll nudge -->
+  <div class="scroll-hint-mobile" aria-hidden="true">
+    <span class="scroll-hint-mobile__label">scroll</span>
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 3v11M4.5 9.5L10 15l5.5-5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+
+  <div class="marquee-band" aria-hidden="true">
+    <div class="marquee-track">
+      <span>★ PEŁNA ENERGII</span>
+      <span>★ SUPER LOJALNA</span>
+      <span>★ SZUKA DOMU</span>
+      <span>★ OWCZAREK MIX</span>
+      <span>★ WROCŁAW</span>
+      <span>★ JEDYNA TAKA</span>
+      <span>★ PEŁNA ENERGII</span>
+      <span>★ SUPER LOJALNA</span>
+      <span>★ SZUKA DOMU</span>
+      <span>★ OWCZAREK MIX</span>
+      <span>★ WROCŁAW</span>
+      <span>★ JEDYNA TAKA</span>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════
        2. KIM JESTEM
-  ───────────────────────────────────────────── -->
-  <section class="section section--white section--diagonal-top" id="kim-jestem">
+  ══════════════════════════════════ -->
+  <section class="section s-kim" id="kim-jestem">
+    <span class="section-watermark" aria-hidden="true">01</span>
     <div class="container">
-      <div class="section-split">
-        <div class="section-split-text">
-          <div class="section-header">
-            <span class="section-num">01</span>
-            <span class="section-label">Kim jestem</span>
+      <div class="split-grid">
+
+        <div class="split-visual">
+          <div class="photo-frame photo-frame--wobbly">
+            <img src="images/personality.jpg" alt="Chanel — energia i charakter" loading="lazy">
           </div>
-          <h2 class="section-title">Poznajmy się.</h2>
-          <div class="text-block">
-            <p>Mam na imię Chanel.</p>
-            <p>Jestem mieszanką owczarka niemieckiego — małą jak na swoją rasę, ale z charakterem znacznie większym.</p>
-            <p>Przeżyłam wypadek samochodowy. Wróciłam do zdrowia. I wiem teraz, czego chcę od życia.</p>
-            <p>Na początku jestem ostrożna. Obserwuję. Oceniam. Ale kiedy zdecyduję, że ktoś jest wart mojego zaufania — jestem jego. Bez reszty.</p>
-            <p>Kocham spacery (długie, nie symboliczne). Kocham zabawki. Lubię kiedy jest coś do roboty. I potrafię sprawić, że zaśmiejesz się z mojego wyglądu — to mieszanka, która wyszła... oryginalnie.</p>
+          <!-- Doodle overlays -->
+          <div class="doodle doodle--sparkle doodle--tl" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><path d="M20 2V38M2 20H38M6.4 6.4L33.6 33.6M33.6 6.4L6.4 33.6" stroke="#FF3E1D" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="doodle doodle--star doodle--br" aria-hidden="true">
+            <svg viewBox="0 0 52 52"><path d="M26 4L31 18.5H46.5L34.5 27.5L39.5 42L26 33L12.5 42L17.5 27.5L5.5 18.5H21Z" fill="#FFDE3B" stroke="#0D0D0D" stroke-width="1.5"/></svg>
+          </div>
+          <div class="doodle doodle--circle doodle--tr" aria-hidden="true">
+            <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="26" fill="none" stroke="#C1FF72" stroke-width="3" stroke-dasharray="7 4" stroke-linecap="round"/></svg>
+          </div>
+          <p class="photo-caption">Widzę Cię!</p>
+        </div>
+
+        <div class="split-text">
+          <div class="s-label-row">
+            <span class="s-num">01</span>
+            <span class="s-label">Kim jestem</span>
+          </div>
+          <h2 class="section-title">Poznajmy<br><em>się.</em></h2>
+          <div class="body-text">
+            <p>Mam na imię <strong>Chanel</strong>.</p>
+            <p>Jestem mieszanką owczarka niemieckiego — małą jak na swoją rasę, ale ze znacznie większym charakterem.</p>
+            <p>Przeżyłam wypadek z pociągiem. Wróciłam do zdrowia, chociaż bez ogonka i z pewnymi niedogodnościami. Ale wiem, czego chcę od życia.</p>
+            <p>Na początku jestem ostrożna. Obserwuję. Oceniam. Ale kiedy zdecyduję, że ktoś jest wart mojego zaufania — jestem jego. <strong>Bez reszty.</strong></p>
+            <p>Kocham spacery (długie, nie symboliczne). Kocham zabawki i mizianki. Potrafię sprawić, że zaśmiejesz się z mojego wyglądu — to mieszanka, która wyszła... <em>oryginalnie</em>.</p>
           </div>
         </div>
-        <div class="section-split-visual">
-          <div class="blob-frame blob-frame--1">
-            <img
-              src="images/personality.jpg"
-              alt="Chanel — zabawa i energia"
-              loading="lazy"
-            >
-          </div>
-          <p class="photo-tag">Energia ✦ Charakter</p>
-        </div>
+
       </div>
     </div>
   </section>
 
 
-  <!-- ─────────────────────────────────────────────
-       3. OCEŃ MNIE (VIDEO)
-  ───────────────────────────────────────────── -->
-  <section class="section section--terra" id="ocen-mnie">
+  <!-- ══════════════════════════════════
+       3. POZNAJ MNIE
+  ══════════════════════════════════ -->
+  <section class="section s-video" id="ocen-mnie">
+    <!-- Corner star decorations -->
+    <div class="corner-star corner-star--tl" aria-hidden="true">
+      <svg viewBox="0 0 80 80"><path d="M40 5L46 29H71L51 44L58 68L40 53L22 68L29 44L9 29H34Z" fill="#FFDE3B"/></svg>
+    </div>
+    <div class="corner-star corner-star--br" aria-hidden="true">
+      <svg viewBox="0 0 60 60"><path d="M30 4L34.5 18H50L38 27L43 41L30 32L17 41L22 27L10 18H25.5Z" fill="#C1FF72"/></svg>
+    </div>
+
     <div class="container">
-      <div class="section-header section-header--light">
-        <span class="section-num section-num--light">02</span>
-        <span class="section-label section-label--light">Oceń mnie</span>
+      <div class="s-label-row s-label-row--light">
+        <span class="s-num s-num--light">02</span>
+        <span class="s-label s-label--light">Poznaj mnie</span>
       </div>
       <h2 class="section-title section-title--light">
         Słowa to jedno.<br>
         <em>Oto ja w akcji.</em>
       </h2>
-      <div class="video-wrapper">
-        <iframe
-          src="https://www.youtube.com/embed/VIDEO_ID"
-          title="Chanel w akcji"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+      <div class="squiggle-wrap" aria-hidden="true">
+        <svg viewBox="0 0 300 28" preserveAspectRatio="none"><path d="M0 14 Q37.5 0 75 14 Q112.5 28 150 14 Q187.5 0 225 14 Q262.5 28 300 14" stroke="#FFDE3B" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+      </div>
+      <div class="video-grid-scroll-wrap">
+      <div class="video-grid">
+        <div class="video-card video-card--1">
+          <div class="video-portrait">
+            <iframe src="https://youtube.com/embed/v3G98-smbwE" title="Chanel - psoty" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <span class="video-label">Psoty ⚡</span>
+        </div>
+        <div class="video-card video-card--2">
+          <div class="video-portrait">
+            <iframe src="https://youtube.com/embed/A0v0qI7XwHs" title="Chanel - mizianki" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <span class="video-label">Mizianki ❤️</span>
+        </div>
+        <div class="video-card video-card--3">
+          <div class="video-portrait">
+            <iframe src="https://youtube.com/embed/D9Tz62_PgjA" title="Chanel - spacer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <span class="video-label">Na spacerze 🐾</span>
+        </div>
+      </div>
       </div>
     </div>
   </section>
 
 
-  <!-- ─────────────────────────────────────────────
-       4. MOJE WYMAGANIA
-  ───────────────────────────────────────────── -->
-  <section class="section section--alt" id="wymagania">
+  <!-- ══════════════════════════════════
+       4. WYMAGANIA
+  ══════════════════════════════════ -->
+  <section class="section s-req" id="wymagania">
+    <span class="section-watermark section-watermark--light" aria-hidden="true">03</span>
     <div class="container">
-      <div class="section-header">
-        <span class="section-num">03</span>
-        <span class="section-label">Wymagania</span>
+      <div class="s-label-row s-label-row--light">
+        <span class="s-num s-num--light">03</span>
+        <span class="s-label s-label--light">Wymagania</span>
       </div>
 
-      <h2 class="section-title">Moje wymagania.</h2>
+      <h2 class="section-title section-title--light">
+        Moje <em>wymagania.</em>
+      </h2>
 
-      <p class="lead-text">
+      <p class="section-lead section-lead--light">
         Nie szukam kogoś, kto mnie „uratuje".<br>
         Szukam kogoś, kto podoła.
       </p>
 
       <ul class="req-list">
-        <li>
-          <span class="req-num">01</span>
-          <span>Znasz się na diecie psów z wrażliwym układem pokarmowym — i traktować ją poważnie</span>
+        <li class="req-item">
+          <span class="req-bg-num" aria-hidden="true">01</span>
+          <div class="req-icon">🥣</div>
+          <span>Znasz się na diecie psów z wrażliwym układem pokarmowym — i traktujesz ją poważnie</span>
         </li>
-        <li>
-          <span class="req-num">02</span>
+        <li class="req-item">
+          <span class="req-bg-num" aria-hidden="true">02</span>
+          <div class="req-icon">🏥</div>
           <span>Jesteś gotowy/a na regularne wizyty weterynaryjne</span>
         </li>
-        <li>
-          <span class="req-num">03</span>
+        <li class="req-item">
+          <span class="req-bg-num" aria-hidden="true">03</span>
+          <div class="req-icon">⏳</div>
           <span>Masz cierpliwość — zaufanie buduję stopniowo, nie na komendę</span>
         </li>
-        <li>
-          <span class="req-num">04</span>
-          <span>Mieszkasz w Polsce <span class="note">— Wrocław i okolice to plus, inne miasta do omówienia</span></span>
+        <li class="req-item">
+          <span class="req-bg-num" aria-hidden="true">04</span>
+          <div class="req-icon">📍</div>
+          <span>Mieszkasz w Polsce <span class="req-note">— Wrocław i okolice to plus, inne miasta do omówienia</span></span>
         </li>
-        <li>
-          <span class="req-num">05</span>
-          <span>Nie szukasz łatwego psa.<br>Szukasz właściwego psa.</span>
+        <li class="req-item">
+          <span class="req-bg-num" aria-hidden="true">05</span>
+          <div class="req-icon">🐕</div>
+          <span>Nie szukasz łatwego psa. Szukasz właściwego psa.</span>
         </li>
       </ul>
 
-      <p class="closing-note">
-        <em>Jeśli to nie Ty — bez urazy.<br>
-        Jeśli to Ty — czytaj dalej.</em>
-      </p>
+      <div class="closing-callout">
+        <svg class="callout-star" viewBox="0 0 32 32"><path d="M16 2L19 11.5H29.5L21.3 17.3L24.3 26.8L16 21.1L7.7 26.8L10.7 17.3L2.5 11.5H13Z" fill="#FFDE3B"/></svg>
+        <p><em>Jeśli to nie Ty — bez urazy.<br>Jeśli to Ty — czytaj dalej.</em></p>
+      </div>
     </div>
   </section>
 
 
-  <!-- ─────────────────────────────────────────────
-       5. CO DOSTAJESZ W ZAMIAN
-  ───────────────────────────────────────────── -->
-  <section class="section section--white" id="co-dostajesz">
+  <!-- ══════════════════════════════════
+       5. CO DOSTAJESZ
+  ══════════════════════════════════ -->
+  <section class="section s-perks" id="co-dostajesz">
+    <span class="section-watermark" aria-hidden="true">04</span>
     <div class="container">
-      <div class="section-split section-split--reverse">
-        <div class="section-split-visual">
-          <div class="blob-frame blob-frame--2">
-            <img
-              src="images/action.jpg"
-              alt="Chanel — urocze spojrzenie"
-              loading="lazy"
-            >
+      <div class="split-grid split-grid--reverse">
+
+        <div class="split-text">
+          <div class="s-label-row">
+            <span class="s-num">04</span>
+            <span class="s-label">W zamian</span>
           </div>
-        </div>
-        <div class="section-split-text">
-          <div class="section-header">
-            <span class="section-num">04</span>
-            <span class="section-label">W zamian</span>
+          <h2 class="section-title">Co dostajesz<br><em>w zamian.</em></h2>
+          <div class="body-text">
+            <p>Partnera na spacery, który nigdy nie odmawia. Kogoś, kto zawsze jest szczęśliwy, że wróciłeś/aś do domu.</p>
           </div>
-          <h2 class="section-title">Co dostajesz<br>w zamian.</h2>
-          <div class="text-block">
-            <p>
-              Partnera na spacery, który nigdy nie odmawia.<br>
-              Kogoś, kto zawsze jest szczęśliwy, że wróciłeś/aś do domu.<br>
-              Psa, który po czasie zaskakuje — swoją energią, lojalnością i charakterem.
-            </p>
-          </div>
-          <ul class="perks">
-            <li class="perk">
-              <svg class="perk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              <span>Lojalny towarzysz</span>
-            </li>
-            <li class="perk">
-              <svg class="perk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-              <span>Pełen energii i życia</span>
-            </li>
-            <li class="perk">
-              <svg class="perk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-              <span>Bezwarunkowa miłość</span>
-            </li>
+          <ul class="perks-list">
+            <li class="perk-item"><span class="perk-bullet">→</span><span>Lojalny towarzysz na zawsze</span></li>
+            <li class="perk-item"><span class="perk-bullet">→</span><span>Nieskończona energia i radość</span></li>
+            <li class="perk-item"><span class="perk-bullet">→</span><span>Bezwarunkowa, bezgraniczna miłość</span></li>
+            <li class="perk-item"><span class="perk-bullet">→</span><span>Pies, który zaskakuje każdego dnia</span></li>
           </ul>
         </div>
+
+        <div class="split-visual">
+          <div class="photo-frame photo-frame--tilt">
+            <img src="images/face.jpg" alt="Chanel — spojrzenie" loading="lazy">
+          </div>
+          <div class="doodle doodle--star doodle--tl" aria-hidden="true">
+            <svg viewBox="0 0 52 52"><path d="M26 4L31 18.5H46.5L34.5 27.5L39.5 42L26 33L12.5 42L17.5 27.5L5.5 18.5H21Z" fill="#FF3E1D" stroke="#0D0D0D" stroke-width="1.5"/></svg>
+          </div>
+          <div class="doodle doodle--sparkle doodle--br" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><path d="M20 2V38M2 20H38M6.4 6.4L33.6 33.6M33.6 6.4L6.4 33.6" stroke="#0D0D0D" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+
       </div>
     </div>
 
+    <!-- Statement band -->
     <div class="statement-band">
       <div class="peek-dog">
-        <img src="images/action.jpg" alt="" aria-hidden="true">
+        <img src="images/face2.jpg" alt="" aria-hidden="true">
       </div>
-      <p class="statement">
-        Nie jestem łatwa.<br>
-        <em>Ale jestem warta zachodu.</em>
-      </p>
+      <div class="statement-inner">
+        <p class="statement-text">
+          Nie jestem łatwa.<br>
+          <em>Ale jestem warta zachodu.</em>
+        </p>
+        <div class="statement-star" aria-hidden="true">
+          <svg viewBox="0 0 80 80"><path d="M40 6L46 25H66L50 37L56 56L40 44L24 56L30 37L14 25H34Z" fill="white" opacity="0.25"/></svg>
+        </div>
+      </div>
     </div>
   </section>
 
 
-  <!-- ─────────────────────────────────────────────
-       6. SCHRONISKO ZA MNĄ STOI
-  ───────────────────────────────────────────── -->
-  <section class="section section--sage" id="schronisko">
+  <!-- ══════════════════════════════════
+       6. SCHRONISKO
+  ══════════════════════════════════ -->
+  <section class="section s-shelter" id="schronisko">
+    <span class="section-watermark" aria-hidden="true">05</span>
     <div class="container">
-      <div class="section-header">
-        <span class="section-num">05</span>
-        <span class="section-label">Wsparcie</span>
+      <div class="s-label-row">
+        <span class="s-num">05</span>
+        <span class="s-label">Wsparcie</span>
       </div>
+      <h2 class="section-title">Schronisko<br><em>za mną stoi.</em></h2>
+      <p class="section-lead">Adoptując mnie, nie zostajesz z tym sam/a.</p>
 
-      <h2 class="section-title">Schronisko<br>za mną stoi.</h2>
-
-      <p class="lead-text">Adoptując mnie, nie zostajesz z tym sam/a.</p>
-
-      <div class="support-cards">
-        <div class="support-card">
-          <div class="support-card-icon">
+      <div class="cards-grid">
+        <div class="s-card">
+          <div class="s-card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
           </div>
-          <h3>Bezpłatna opieka weterynaryjna</h3>
+          <h3>Opieka weterynaryjna</h3>
           <p>Pełne wsparcie medyczne przez cały okres adaptacji</p>
         </div>
-        <div class="support-card">
-          <div class="support-card-icon">
+        <div class="s-card">
+          <div class="s-card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
           </div>
-          <h3>Wsparcie w adaptacji</h3>
+          <h3>Pomoc w adaptacji</h3>
           <p>Pomoc w pierwszych tygodniach w nowym domu</p>
         </div>
-        <div class="support-card">
-          <div class="support-card-icon">
+        <div class="s-card">
+          <div class="s-card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           </div>
           <h3>Kontakt z opiekunką</h3>
@@ -268,52 +375,68 @@
   </section>
 
 
-  <!-- ─────────────────────────────────────────────
+  <!-- ══════════════════════════════════
        7. KONTAKT
-  ───────────────────────────────────────────── -->
-  <section class="section section--ink" id="kontakt">
+  ══════════════════════════════════ -->
+  <section class="section s-contact" id="kontakt">
+    <!-- Decorative SVG shapes -->
+    <div class="contact-deco contact-deco--1" aria-hidden="true">
+      <svg viewBox="0 0 100 100"><path d="M50 8L56 33H82L62 50L69 75L50 60L31 75L38 50L18 33H44Z" fill="#FFDE3B" opacity="0.25"/></svg>
+    </div>
+    <div class="contact-deco contact-deco--2" aria-hidden="true">
+      <svg viewBox="0 0 70 70"><circle cx="35" cy="35" r="30" fill="none" stroke="#C1FF72" stroke-width="2" stroke-dasharray="6 3" opacity="0.35"/></svg>
+    </div>
+    <div class="contact-deco contact-deco--3" aria-hidden="true">
+      <svg viewBox="0 0 40 60"><path d="M24 3L7 32H20L14 57L37 24H24Z" fill="#FF3E1D" opacity="0.2"/></svg>
+    </div>
+
     <div class="container container--center">
-      <div class="section-header section-header--center section-header--light">
-        <span class="section-num section-num--light">06</span>
-        <span class="section-label section-label--light">Kontakt</span>
+      <div class="s-label-row s-label-row--light s-label-row--center">
+        <span class="s-num s-num--light">06</span>
+        <span class="s-label s-label--light">Kontakt</span>
       </div>
 
-      <h2 class="section-title section-title--light">
+      <h2 class="contact-title">
         Gotowy/a na<br>
         rozmowę<br>
         <em>kwalifikacyjną?</em>
       </h2>
 
-      <p class="lead-text lead-text--light">
-        Napisz do nas. Chanel oceni kandydaturę osobiście.
+      <p class="contact-sub">
+        Napisz lub zadzwoń. Chanel oceni kandydaturę osobiście.
       </p>
 
       <div class="contact-actions">
-        <a href="mailto:REPLACE_EMAIL" class="btn-primary">Napisz do nas</a>
-        <p class="contact-phone">Lub zadzwoń: <strong>REPLACE_PHONE</strong></p>
+        <a href="mailto:rodzynka007@gmail.com" class="btn-cta">
+          Napisz wiadomość
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <p class="contact-phone">lub zadzwoń: <strong>+48 662 535 572</strong></p>
       </div>
 
-      <p class="footer-note">Chanel przebywa w schronisku w okolicach Wrocławia.</p>
+      <p class="footer-note">Chanel przebywa w TOZ Schronisko dla Bezdomnych Zwierząt we Wrocławiu.</p>
     </div>
   </section>
 
-  <!-- ─── SECTION SCROLL INDICATOR ─────────────── -->
+
+  <!-- ══════════════════════════════════
+       SCROLL NAV
+  ══════════════════════════════════ -->
   <nav class="scroll-nav" aria-label="Nawigacja po sekcjach">
-    <a href="#hero"        class="scroll-nav-dot" data-section="hero"        title="Chanel"></a>
-    <a href="#kim-jestem"  class="scroll-nav-dot" data-section="kim-jestem"  title="Kim jestem"></a>
-    <a href="#ocen-mnie"   class="scroll-nav-dot" data-section="ocen-mnie"   title="Oceń mnie"></a>
-    <a href="#wymagania"   class="scroll-nav-dot" data-section="wymagania"   title="Wymagania"></a>
+    <a href="#hero"         class="scroll-nav-dot" data-section="hero"         title="Chanel"></a>
+    <a href="#kim-jestem"   class="scroll-nav-dot" data-section="kim-jestem"   title="Kim jestem"></a>
+    <a href="#ocen-mnie"    class="scroll-nav-dot" data-section="ocen-mnie"    title="Oceń mnie"></a>
+    <a href="#wymagania"    class="scroll-nav-dot" data-section="wymagania"    title="Wymagania"></a>
     <a href="#co-dostajesz" class="scroll-nav-dot" data-section="co-dostajesz" title="W zamian"></a>
-    <a href="#schronisko"  class="scroll-nav-dot" data-section="schronisko"  title="Schronisko"></a>
-    <a href="#kontakt"     class="scroll-nav-dot" data-section="kontakt"     title="Kontakt"></a>
+    <a href="#schronisko"   class="scroll-nav-dot" data-section="schronisko"   title="Schronisko"></a>
+    <a href="#kontakt"      class="scroll-nav-dot" data-section="kontakt"      title="Kontakt"></a>
   </nav>
 
   <script>
     (function () {
       const nav  = document.querySelector('.scroll-nav');
       const dots = document.querySelectorAll('.scroll-nav-dot');
-      const darkSections = new Set(['ocen-mnie', 'kontakt']);
-
+      const darkSections = new Set(['ocen-mnie', 'wymagania', 'kontakt']);
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -324,8 +447,18 @@
           }
         });
       }, { threshold: 0.35, rootMargin: '-5% 0px -5% 0px' });
-
       document.querySelectorAll('section[id]').forEach(s => observer.observe(s));
+
+      // Hide right-fade mask on video carousel when scrolled to last card
+      const videoWrap = document.querySelector('.video-grid-scroll-wrap');
+      if (videoWrap) {
+        const updateMask = () => {
+          const atEnd = videoWrap.scrollLeft + videoWrap.clientWidth >= videoWrap.scrollWidth - 8;
+          videoWrap.classList.toggle('is-end', atEnd);
+        };
+        videoWrap.addEventListener('scroll', updateMask, { passive: true });
+        updateMask();
+      }
     })();
   </script>
 
