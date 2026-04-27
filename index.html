@@ -10,6 +10,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+  <!-- Google Analytics — loads only after cookie consent -->
+  <!-- Replace G-XXXXXXXXXX with your Measurement ID -->
+  <script>
+    window.__GA_ID = 'G-XXXXXXXXXX';
+    window.__loadGA = function () {
+      if (window.__gaLoaded) return;
+      window.__gaLoaded = true;
+      var s = document.createElement('script');
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.__GA_ID;
+      s.async = true;
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', window.__GA_ID);
+    };
+    if (localStorage.getItem('cookie_consent') === 'accepted') {
+      window.__loadGA();
+    }
+  </script>
 </head>
 <body>
 
@@ -435,6 +456,35 @@
     <a href="#schronisko"   class="scroll-nav-dot" data-section="schronisko"   title="Schronisko"></a>
     <a href="#kontakt"      class="scroll-nav-dot" data-section="kontakt"      title="Kontakt"></a>
   </nav>
+
+  <!-- ══════════════════════════════════
+       COOKIE CONSENT
+  ══════════════════════════════════ -->
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Zgoda na pliki cookie" hidden>
+    <p class="cookie-text">Ta strona używa plików cookie do analizy ruchu (Google Analytics). Możesz wyrazić zgodę lub ją odrzucić — strona działa w obu przypadkach.</p>
+    <div class="cookie-actions">
+      <button class="cookie-btn cookie-btn--accept" id="cookieAccept">Akceptuję</button>
+      <button class="cookie-btn cookie-btn--decline" id="cookieDecline">Odrzuć</button>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const banner = document.getElementById('cookieBanner');
+      if (!localStorage.getItem('cookie_consent')) {
+        banner.hidden = false;
+      }
+      document.getElementById('cookieAccept').addEventListener('click', function () {
+        localStorage.setItem('cookie_consent', 'accepted');
+        banner.hidden = true;
+        window.__loadGA && window.__loadGA();
+      });
+      document.getElementById('cookieDecline').addEventListener('click', function () {
+        localStorage.setItem('cookie_consent', 'declined');
+        banner.hidden = true;
+      });
+    })();
+  </script>
 
   <script>
     (function () {
