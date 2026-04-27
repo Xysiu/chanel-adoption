@@ -746,15 +746,16 @@ ul  { list-style: none; }
 }
 
 /* Swipe hint — mobile only */
-.swipe-hint {
-  display: none;
-}
+.video-scroll-area { position: relative; }
+
+.swipe-hint { display: none; }
 
 @keyframes swipe-nudge {
-  0%   { transform: translateX(0);    opacity: 1; }
-  40%  { transform: translateX(-14px); opacity: 1; }
-  60%  { transform: translateX(-14px); opacity: 1; }
-  100% { transform: translateX(0);    opacity: 0.5; }
+  0%   { transform: translateX(4px);  opacity: 0; }
+  15%  { transform: translateX(4px);  opacity: 1; }
+  55%  { transform: translateX(-18px); opacity: 1; }
+  80%  { transform: translateX(-18px); opacity: 0.7; }
+  100% { transform: translateX(4px);  opacity: 0; }
 }
 
 
@@ -1225,19 +1226,25 @@ ul  { list-style: none; }
   .swipe-hint {
     display: flex;
     align-items: center;
-    gap: 8px;
-    justify-content: center;
-    color: rgba(255, 222, 59, 0.75);
-    margin-top: 18px;
-    animation: swipe-nudge 1.6s ease-in-out 1s 3 forwards;
+    gap: 10px;
+    position: absolute;
+    bottom: 56px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 100px;
     pointer-events: none;
+    animation: swipe-nudge 1.8s ease-in-out 1.2s 3 forwards;
+    opacity: 0;
+    white-space: nowrap;
   }
 
-  .swipe-hint__hand { width: 26px; height: 26px; flex-shrink: 0; }
-  .swipe-hint__arrow { width: 36px; height: 14px; flex-shrink: 0; }
-
-  .video-grid-scroll-wrap.is-end ~ .swipe-hint,
-  .video-grid-scroll-wrap:not(.is-end) ~ .swipe-hint.done { display: none; }
+  .swipe-hint__hand { width: 22px; height: 22px; flex-shrink: 0; }
+  .swipe-hint__arrow { width: 32px; height: 13px; flex-shrink: 0; }
 
   /* Extra left indent on first card — makes the carousel feel inset, not glued to edge */
   .video-card--1 { margin-left: 20px; }

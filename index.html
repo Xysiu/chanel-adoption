@@ -218,6 +218,7 @@
       <div class="squiggle-wrap" aria-hidden="true">
         <svg viewBox="0 0 300 28" preserveAspectRatio="none"><path d="M0 14 Q37.5 0 75 14 Q112.5 28 150 14 Q187.5 0 225 14 Q262.5 28 300 14" stroke="#FFDE3B" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
       </div>
+      <div class="video-scroll-area">
       <div class="video-grid-scroll-wrap">
       <div class="video-grid">
         <div class="video-card video-card--1">
@@ -247,6 +248,7 @@
         <svg class="swipe-hint__arrow" viewBox="0 0 40 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 8h36M28 2l8 6-8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
+      </div>
       </div>
     </div>
   </section>
@@ -514,7 +516,7 @@
       // Hide right-fade mask on video carousel when scrolled to last card
       const videoWrap = document.querySelector('.video-grid-scroll-wrap');
       if (videoWrap) {
-        const swipeHint = videoWrap.nextElementSibling;
+        const swipeHint = document.querySelector('.swipe-hint');
         const hideSwipeHint = () => {
           if (swipeHint) swipeHint.style.display = 'none';
           videoWrap.removeEventListener('scroll', hideSwipeHint);
