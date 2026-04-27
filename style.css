@@ -1231,6 +1231,8 @@ ul  { list-style: none; }
 }
 
 /* ── Cookie consent banner ─────────────────────────── */
+.cookie-banner[hidden] { display: none !important; }
+
 .cookie-banner {
   position: fixed;
   bottom: 24px;
