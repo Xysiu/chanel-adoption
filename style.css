@@ -745,6 +745,19 @@ ul  { list-style: none; }
   text-transform: uppercase;
 }
 
+/* Swipe hint — mobile only */
+.swipe-hint {
+  display: none;
+}
+
+@keyframes swipe-nudge {
+  0%   { transform: translateX(0);    opacity: 1; }
+  40%  { transform: translateX(-14px); opacity: 1; }
+  60%  { transform: translateX(-14px); opacity: 1; }
+  100% { transform: translateX(0);    opacity: 0.5; }
+}
+
+
 /* ═══════════════════════════════════════════════
    SECTION: WYMAGANIA
    ═══════════════════════════════════════════════ */
@@ -1208,6 +1221,23 @@ ul  { list-style: none; }
     max-width: 74vw;
     scroll-snap-align: start;
   }
+
+  .swipe-hint {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    color: rgba(255, 222, 59, 0.75);
+    margin-top: 18px;
+    animation: swipe-nudge 1.6s ease-in-out 1s 3 forwards;
+    pointer-events: none;
+  }
+
+  .swipe-hint__hand { width: 26px; height: 26px; flex-shrink: 0; }
+  .swipe-hint__arrow { width: 36px; height: 14px; flex-shrink: 0; }
+
+  .video-grid-scroll-wrap.is-end ~ .swipe-hint,
+  .video-grid-scroll-wrap:not(.is-end) ~ .swipe-hint.done { display: none; }
 
   /* Extra left indent on first card — makes the carousel feel inset, not glued to edge */
   .video-card--1 { margin-left: 20px; }
